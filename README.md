@@ -1,5 +1,8 @@
 *My Favorite*
 
+*Similar to Windows when opening a file from search*
+
+*There is a* **small (maybe 1-2s) delay** *when opening. But it will get there!*
 # Installation Guide: Nemo Contains And Scroll
 
 *This nemo_action:* 

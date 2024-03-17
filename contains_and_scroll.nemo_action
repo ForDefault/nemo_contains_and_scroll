@@ -1,9 +1,0 @@
-[Nemo Action]
-Active=true
-Name=Contains and Scroll
-Comment=Open containing folder and scroll to this item
-Exec=/home/whonow/.local/share/nemo/actions/contains_and_scroll.sh %F
-Icon-Name=system-search
-Selection=s
-Extensions=any;
-EscapeSpaces=true

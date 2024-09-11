@@ -23,13 +23,15 @@ REPO_URL="https://github.com/ForDefault/nemo_contains_and_scroll.git" && \
 REPO_NAME=$(basename $REPO_URL .git) && \
 git clone $REPO_URL && \
 cd $REPO_NAME && \
+full_path=$(pwd) && \
 sudo apt-get update && sudo apt-get install -y xdotool && \
-sed -i "s|/home/\$USER|/home/$USER|g" contains_and_scroll.nemo_action && \
-mv contains_and_scroll.sh /home/$USER/.local/share/nemo/actions/ && \
-mv contains_and_scroll.nemo_action /home/$USER/.local/share/nemo/actions/ && \
+sed -i "s|/home/\$USER|/home/$USER|g" $full_path/contains_and_scroll.nemo_action && \
+mv $full_path/contains_and_scroll.sh /home/$USER/.local/share/nemo/actions/ && \
+mv $full_path/contains_and_scroll.nemo_action /home/$USER/.local/share/nemo/actions/ && \
 chmod +x /home/$USER/.local/share/nemo/actions/contains_and_scroll.sh && \
 chmod +x /home/$USER/.local/share/nemo/actions/contains_and_scroll.nemo_action && \
 cd .. && rm -rf $REPO_NAME
+
 ```
 
 ## Usage
